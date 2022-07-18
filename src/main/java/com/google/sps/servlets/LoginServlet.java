@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 import com.google.firebase.auth.FirebaseAuthException;
-import com.google.sps.firebase.LoginAuthenticator;
 
 /** Handles requests sent to the /login URL */
 @WebServlet("/login")
@@ -46,16 +45,5 @@ public class LoginServlet extends HttpServlet {
         // Get the value entered in the login form
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-    
-        LoginAuthenticator authenticator = new LoginAuthenticator();
-        try 
-        {
-            authenticator.authenticate(username, password);
-        } catch (FirebaseAuthException e) 
-        {
-            response.setContentType("text/html;");
-            response.getWriter().println("<h1>" + e.getMessage() + "</h1>");
-            //response.sendRedirect("http://dle-sps-summer22.appspot.com/");
-        }
     }
 }
