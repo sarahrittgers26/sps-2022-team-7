@@ -1,0 +1,23 @@
+{
+  "name": "sps-2022-team-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahrittgers26/sps-2022-team-7.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahrittgers26/sps-2022-team-7/issues"
+  },
+  "homepage": "https://github.com/sarahrittgers26/sps-2022-team-7#readme",
+  "dependencies": {
+    "firebase": "^9.9.0"
+  }
+}

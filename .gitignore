@@ -5,3 +5,5 @@
 .vscode/
 .settings/
 target/
+node_modules/
+.theia/
