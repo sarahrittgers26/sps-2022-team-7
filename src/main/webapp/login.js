@@ -14,8 +14,7 @@ function signin() {
     const password = document.getElementById('password').value
     signInWithEmailAndPassword(auth, username, password)
                 .then((userCredential) => {
-                // Signed in 
-                // ...
+                window.location.replace("https://sps-team-7-dot-dle-sps-summer22.uc.r.appspot.com/newsfeed");
                 })
                 .catch((error) => {
                 console.log(error.message)
